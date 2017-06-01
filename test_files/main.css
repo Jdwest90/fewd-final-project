@@ -1,0 +1,454 @@
+html,body {
+    height: 100%;
+   font-family: 'Roboto Slab', serif;
+   background: url('../images/home.jpg') center no-repeat;
+
+}
+
+h1 {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 0%;
+     -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(270deg) translateX(60%);
+    background-color: #fff;
+    
+}
+
+h1 strong {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 300%;
+    text-shadow: 0px 5px 14px black;
+}   
+
+h1 em {
+    font-family: 'Lobster', cursive;
+    font-size: 400%;
+     color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(../images/rosegold.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.mainmenu {
+    position: absolute;
+    -webkit-transform-origin: right top;
+    -webkit-transform: rotate(90deg) translateX(100%);
+    width: 100%;
+    padding-top: 2%;
+}
+
+.vertical-menu {
+    width: 50%;
+}
+
+.vertical-menu a {
+    background-color: #fff; 
+    color: black; 
+    display: block; 
+    padding: 10%; 
+    text-decoration: none; 
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    font-weight: 100;
+    font-size: 120%;
+}
+
+.vertical-menu a:hover {
+    background-color: #ebd5ca;
+    background: url('../images/rosegold.jpg') center no-repeat; 
+    background-size: cover;
+    color: white;
+    opacity: .6;
+}
+
+.blocks {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.blocks:nth-child(1) {
+  background: #ebd5ca;
+}
+.blocks:nth-child(2) {
+  background: url('../images/home.jpg') center no-repeat;
+}
+.blocks:nth-child(3) {
+  background: url('../images/marble.jpg') center no-repeat;
+background-size: cover;
+
+}
+.blocks:nth-child(4) {
+background: url('../images/marble.jpg') center no-repeat;
+background-size: cover;
+}
+
+#about p {
+    text-align: center;
+    border: 2px solid #e5ba97;
+    margin: 5%;
+    padding: 10%;
+    font-size: 110%;
+    background-color: #eee;
+    opacity: .7;
+}
+
+#contact p{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 100;
+}
+
+#contact h2 {
+    font-size:300%;
+    text-align: left;
+    border-bottom: 2px solid #e5ba97;
+    border-left: 2px solid #e5ba97;
+     margin: 3%;
+    padding: 2%;
+    width: 30%;
+    font-weight: 100;
+}
+
+
+p strong {
+    border-bottom: 1px solid #e5ba97;
+    padding-bottom: .4%;
+}
+
+
+
+.blocks:nth-child(5) {
+ background: url('../images/marble.jpg') center no-repeat;
+background-size: cover;
+
+}
+
+/*Work Section*/
+
+.wrap {
+  margin:10% auto 10% auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+
+.tile {
+  width:380px;
+  height:380px;
+  margin:10px;
+  background-color:#e5ba97;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  
+}
+
+.tile img {
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+
+.tile .text{
+   z-index:99; 
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+}
+
+.tile h1{
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  font-family: 'Roboto Slab', serif;
+}
+
+.tile h2 {
+  margin:20px 0 0 0;
+  transform: translateX(200px);
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-size: 250%;
+}
+
+.tile p {
+  margin:20px 0 0 0;
+  line-height: 20px;
+   opacity:0; 
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+  font-family: 'Roboto Slab', serif;
+  font-size: 100%;
+}
+.animate-text {
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+
+.tile:hover {
+background-color:#e5ba97; 
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+
+.tile:hover img {
+  opacity: 0.2;
+}
+
+.tile:hover .animate-text {
+  transform:translateX(0);
+  opacity:1;
+}
+
+.dots {
+  position:absolute;
+  bottom:20px;
+  right:30px;
+  margin: 0 auto;
+  width:30px;
+  height:30px;
+  color:currentColor;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around; 
+}
+
+.dots span {
+    width: 5px;
+    height:5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display:block;
+  opacity:0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px); 
+}
+
+.tile:hover span {
+  opacity:1;
+  transform:translateY(0px);
+}
+
+.dots span:nth-child(1) {
+   transition-delay: 0.05s;
+}
+
+.dots span:nth-child(2) {
+   transition-delay: 0.1s;
+}
+
+.dots span:nth-child(3) {
+   transition-delay: 0.15s;
+}
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+
+/*contact us form*/
+
+#form {
+  width: 35%;
+  margin: 5% auto 10% auto;
+}
+
+input {
+    font-family: 'Roboto Slab', serif;
+
+  font-size: 90%;
+  width: 100%;
+  height: 50px;
+  padding: 0px 3% 0px 3%;
+  
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px black;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #eee;
+  color: #000;
+}
+
+textarea {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+  width: 111%;
+  max-width: 95%;
+  height: 110px;
+  max-height: 110px;
+  padding: 5.5%;
+  
+
+  outline: none;
+  
+  color: #726659;
+  font-size: 90%;
+  
+  border: solid 1px black;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #eee;
+  color: #000;
+}
+
+#submit {
+    font-family: 'Roboto Slab', serif;
+  width: 106.5%;
+  
+  padding: 0;
+  margin: -3% 0px 0px 0px;
+  
+  font-size: 90%;
+  color: #fff;
+  background-color: #000;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px black;
+  border-top: none;
+}
+
+#submit:hover {
+  background: #e5ba97;
+}
+
+
+/*Return to top button*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: darkgrey;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 17px;
+    top: 11px;
+    font-size: 25px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: url('../images/rosegold.jpg');
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 768px) and (min-width: 200px) {
+
+.mainmenu {
+  position: absolute;
+  width: 100%
+  -webkit-transform-origin: none;
+    -webkit-transform: rotate(0) translateX(0);
+
+}
+
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  padding: 3%;
+}
+
+h1 {
+  position: relative;
+  padding: 10%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-left: 7%;
+   -webkit-transform-origin: none;
+    -webkit-transform: rotate(0) translateX(0);
+}
+
+#contact h2 {
+  width: 52%;
+  margin: 3%;
+  padding: 4%;
+}
+
+#contact p {
+  font-size: 150%;
+  padding-top: 5%;
+}
+
+#form {
+  width: 80%;
+}
+
+
+
+}
+

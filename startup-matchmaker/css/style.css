@@ -1,0 +1,125 @@
+body { 
+	font-family: 'Arvo', serif;
+
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+header {
+		background-color: black;
+		float: left;
+		width: 100%;
+		border-bottom: 5px #f9e42e solid; 
+}
+
+h1 {
+	color: #f9e42e;
+	float: left;
+	width: 30%;
+	font-size: 35px;
+	font-weight: 800;
+	margin-left: 30px;
+}
+
+.bar {
+		float: right;
+		padding: 10px;
+		margin-top: 40px;
+		margin-right: 10px;
+		display: inline;
+}
+
+.bar a {
+		text-decoration: none;
+		color: white;
+		font-weight: 300;
+}
+
+h2 {
+		background-color: grey;
+		text-align: center;
+		padding: 20px;
+		margin-top: 20px;
+		clear:both;
+		margin-bottom: 0;
+}
+
+#main {
+		background: url("../images/coworking.jpg") center center no-repeat;
+		background-size: cover;
+		padding: 100px;
+}
+
+.profile {
+		background-color: white;
+		float: right;
+		width: 30%;
+		border: 1px black solid;
+		opacity: .7;
+		padding: 30px;
+}
+
+.profile a{ 
+		      color: black;
+              text-align: center;
+              background-color: #f9e42e;
+              font-size: 12px;
+              font-weight: 600;
+              padding: 15px 20px;
+              display: block;
+              border-radius: 5px;
+              text-decoration: none;
+              margin: 0 auto;
+              width: 137px;
+
+}
+
+#bottom {
+	float: left;
+	width: 100%;
+}
+
+.section {
+      float: left;
+      width: 31%;
+      margin: 5px 1%;
+      box-sizing: border-box;
+      background: white;
+}
+
+.first {
+	border-right: 1px black solid;
+}
+
+.middle {
+	border-right: 1px black solid;
+}
+
+.button {
+              text-align: center;
+              background-color: grey;
+              font-size: 12px;
+              font-weight: 600;
+              padding: 15px 20px;
+              color: black;
+              display: block;
+              border-radius: 5px;
+              text-decoration: none;
+              margin: 0 auto;
+              width: 137px;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding-bottom: 5px;
+}

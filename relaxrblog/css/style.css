@@ -1,0 +1,179 @@
+body {
+  background:#f0efef;
+  font-family:'Open Sans', sans-serif;
+}
+
+header {
+  background: #033048;
+  float: left;
+  width: 100%;
+}
+
+a:hover { 
+          background-color: #606161;
+
+}
+
+a:active {
+          color: white;
+
+}
+
+#signup a:hover {
+            background-color: #606161;
+
+} 
+
+.brand {
+      float: left;
+      width: 30%;
+      color: white;
+      font-weight: 800;
+      padding-left: 60px;
+      margin-left: 40px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 36px;
+}
+
+.bar {
+      float: right;
+      width: 10%;
+      margin-top: 30px;
+      display: inline;
+      
+}
+
+.bar a {
+      text-decoration: none;
+      color: #f9e42e;
+      font-weight: 300;
+      text-align: center;
+
+}
+
+.main {
+  background: #f0efef;
+  float: left;
+  width: 700px;
+  padding: 20px;
+  padding-left: 100px;
+  text-align: right;
+  padding-bottom: 100px;
+}
+
+.main h2 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 40px;
+}
+
+.post {
+        border-bottom: 2px black solid;
+        padding-bottom: 20px;
+        padding-top: 20px;
+}
+
+.post a {
+        text-decoration: none;
+        font-weight: 400; 
+        font-size: 24px;
+}
+
+.post p {
+          text-align: left;
+}
+
+.post p::first-line {
+          text-transform: uppercase;
+
+
+}
+
+.post p::first-letter {
+
+            font-size: 3em;
+            float: left;
+            padding: 2px;
+            margin-right: 4px;
+}
+
+aside {
+  background: #f0efef;
+  float: right;
+  width: 240px;
+  padding-right: 100px;
+}
+
+h4 { 
+      font-weight: 800;
+      font-size: 32px; 
+}
+
+.categories a {
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 300;
+}
+
+.about {
+          margin-bottom: 40px;
+}
+
+.about p {
+          font-size: 22px;
+          font-weight: 300;
+}
+
+.about a {
+          text-decoration: none;
+          font-size: 22px;
+          font-weight: 800;
+
+}
+
+ #signup { 
+          background-color: #f9e42e;
+          padding: 20px;
+ }
+
+ #signup a {  
+              color: white;
+              text-align: center;
+              background-color: #033048;
+              font-size: 12px;
+              font-weight: 600;
+              padding: 10px 50px;
+              color: white;
+              display: block;
+              border-radius: 5px;
+              text-decoration: none;
+              margin: 0 auto;
+              width: 200px;
+}
+
+footer {
+        background-color: #121212;
+        float: left;
+        width: 100%;
+        text-align: center;
+        color: white;
+
+}
+
+footer h1 { 
+            color: #f9e42e;
+            text-align: center;
+            letter-spacing: .5px;
+            font-weight: 800;
+            padding: 25px;
+}
+
+
+/*.placeholder {
+  border: 1px solid black;
+  background: rgba(255,255,255,.6);
+  padding: 20px;
+  height: 150px;
+  margin: 10px;
+}*/
